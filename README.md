@@ -67,5 +67,5 @@ As mentioned above, this dataset was [sourced from Kaggle](https://www.kaggle.co
 ## How to Run
 
 ```bash
-uvicorn api:api --reload
+cd container && uvicorn api:api --reload
 ```

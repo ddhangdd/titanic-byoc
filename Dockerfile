@@ -1,5 +1,5 @@
-# Instantiating the base image
-FROM python:3.9-slim-buster
+# Instantiating the base image (matching your development environment)
+FROM python:3.8-slim-bullseye
 
 # Installing Linux dependencies
 RUN apt-get --yes update
@@ -26,3 +26,6 @@ WORKDIR /opt/program
 
 # Setting the "serve" file to be executable
 RUN chmod +x serve
+
+# Command to run when container starts
+CMD ["./serve"]
